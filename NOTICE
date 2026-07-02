@@ -1,0 +1,23 @@
+Void Ledger
+Copyright 2026 McCal-Codes
+
+This product includes software developed by McCal-Codes (https://github.com/McCal-Codes).
+
+Third-party data sources and services
+-------------------------------------
+
+This application reads public game data and community APIs. Void Ledger is not
+affiliated with or endorsed by the providers below.
+
+- Warframe world state and public export data (warframestat.us, content.warframe.com)
+- Warframe Market API (warframe.market)
+- Community Baro compendium data (Google Sheets, public read-only)
+- AlecaFrame local cache (user-installed third-party tool; read-only import)
+- Overwolf game events API (optional advanced inventory capture)
+
+Trademarks
+----------
+
+Warframe and related names are trademarks of Digital Extremes Ltd. Void Ledger
+is a fan-made tool and is not officially affiliated with Digital Extremes or
+Warframe.

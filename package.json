@@ -1,17 +1,50 @@
 {
-  "name": "void-ledger-app",
+  "name": "void-ledger",
   "version": "0.1.0",
-  "private": true,
+  "description": "Local-first Warframe Baro Ki'Teer planning app for Windows",
+  "license": "Apache-2.0",
+  "author": "McCal-Codes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/McCal-Codes/void-ledger.git"
+  },
+  "homepage": "https://github.com/McCal-Codes/void-ledger#readme",
+  "bugs": {
+    "url": "https://github.com/McCal-Codes/void-ledger/issues"
+  },
+  "keywords": [
+    "warframe",
+    "baro",
+    "tennocon",
+    "ducats",
+    "relics",
+    "prime",
+    "alecaframe",
+    "nextjs"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "smoke": "node scripts/smoke-app.mjs",
+    "setup:windows": "powershell -ExecutionPolicy Bypass -File scripts/setup-windows.ps1",
+    "start:windows": "powershell -ExecutionPolicy Bypass -File scripts/start-windows.ps1",
+    "stop:windows": "powershell -ExecutionPolicy Bypass -File scripts/stop-windows.ps1",
+    "package:portable": "powershell -ExecutionPolicy Bypass -File scripts/package-portable.ps1",
+    "bridge:status": "node scripts/overwolf-bridge-status.mjs",
+    "account:import-alecaframe": "node scripts/import-alecaframe-log-inventory.mjs"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "date-fns": "^4.2.1",
+    "lucide-react": "^1.16.0",
     "next": "16.2.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3",
+    "zustand": "^5.0.13"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

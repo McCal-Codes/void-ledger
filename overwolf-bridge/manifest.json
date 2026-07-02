@@ -1,0 +1,38 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "Void Ledger Overwolf Bridge",
+    "version": "0.1.0",
+    "minimum-overwolf-version": "0.135",
+    "author": "Void Ledger",
+    "icon": "icon.png",
+    "icon_gray": "icon-gray.png",
+    "launcher_icon": "icon.ico",
+    "description": "Local development bridge that forwards Warframe inventory game events to Void Ledger."
+  },
+  "permissions": ["GameInfo"],
+  "data": {
+    "start_window": "Background",
+    "windows": {
+      "Background": {
+        "file": "background.html",
+        "is_background_page": true,
+        "mute": true
+      }
+    },
+    "game_events": [8954],
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [8954]
+    },
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [8954]
+        }
+      }
+    ]
+  }
+}

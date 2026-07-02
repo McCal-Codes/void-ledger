@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+.void-ledger/
 
 # debug
 npm-debug.log*
@@ -39,3 +40,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local agent / tooling artifacts
+.superpowers/
+.claw/
+.playwright-mcp/
+.code-review-graph/
+
+# portable package output
+dist/
